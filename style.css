@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&family=Short+Stack&family=Silkscreen:wght@400;700&family=Waiting+for+the+Sunrise&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: black;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    background: linear-gradient(45deg, green, yellow, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    background-size: 300%;
+    animation: titleAnimation 10s infinite linear;
+  }
+  h4{
+    color: rgb(152, 244, 146);
+    margin-top: 10px;
+    }
+.scoreboard{
+    width: 470px;
+    height: 250px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border:  2px solid white;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+  .top{
+    width: 100%;
+   height: 40%;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+  .top::after{
+          content: "";
+          width: 2px;
+          height: 50px;
+          background-color: rgba(0, 0, 0, 0.737);
+          position: absolute;
+          left: 50%;
+  }
+  .player-name{
+        width: 50%;
+    
+  }
+  .score{
+    font-family: "Silkscreen", sans-serif;
+    font-size: 70px;
+  }
+  #status{
+    color:  rgb(152, 244, 146);
+  }
+  #status p{
+    margin: 10px;
+  }
+  button{
+    padding: 10px;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+  }
+  button:hover{
+    background-color: white;
+    color: blueviolet;
+  }
+  button:active{
+    background-color: rgb(79, 79, 78);
+  }
+  @keyframes titleAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media (max-width:480px){
+    .title{
+        font-size: 25px;
+       
+    }
+    h4{
+        font-size: 10px;
+    }
+    .scoreboard{
+        width: 300px;
+    }
+  }
