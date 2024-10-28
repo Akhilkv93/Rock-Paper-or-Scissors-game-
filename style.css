@@ -13,7 +13,12 @@ body{
     text-align: center;
     height: 100vh;
     position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .title {
     font-size: 60px;
     font-weight: bold;
@@ -72,6 +77,7 @@ body{
   }
   #status{
     color:  rgb(152, 244, 146);
+    display: none;
   }
   #status p{
     margin: 10px;
@@ -91,6 +97,7 @@ body{
   button:hover{
     background-color: white;
     color: blueviolet;
+    
   }
   button:active{
     background-color: rgb(79, 79, 78);
